@@ -1,14 +1,15 @@
-class TreeNode:
-    def __init__(self, data):
-        self.data = data
-        self.cabang = []
+class TreeNode: # MEMBUAT TEMPAT class BERNAMA TreeNode UNTUK MEMBAGUN STRUKTUR POHON DATA
+    def __init__(self, data): # FUNGSI KHUSUS YANG OTOMATIS BERJALAN MEMBUAT OBJEK BARU DENGAN MEMBAWA PARAMETER data
+        self.data = data # MENYIMPAN NILAI PARAMETER data KE DALAM VARIABEL INTERNAL OBJEK
+        self.cabang = [] # MEMBUAT WADAH BERUPA LIST KODONG UNTUK MENAMPUNG CABANG DARI NODE INI
 
-    def tambah_bagian(self, bagian):
-        self.cabang.append(bagian)
+    def tambah_bagian(self, bagian): # MEMBUAT FUNGSI UNTUK MENAMBAH KAN NODE BARU KE DALAM POHON DENGAN NAMA tambah_bagian DENGAN MEMBAWA PARAMETER bagian
+        self.cabang.append(bagian) # MENAMBAHKAN/MEMASUKKAN OBJEK bagian (NODE CABANG) KE DALAM LIST CABANG
 
-    def tampilkan(self, level=0):
-        indent = "   " * level
-        print(indent + self.data)
+    def tampilkan(self, level=0): # MEMBUAT FUNGSI UNTUK MENAMPILKAN STRUKTUR POHON DENGAN NILAI AWAL ADALAH 0
+        indent = "   " * level # MEMBUAT TEKS SPASI MENJOROK KE DALAM (INDENTASI) BERDASARKAN LEVEL
+        print(indent + self.data) # MENCETAK SPASI INDENTASI DIIKUTI DENGAN ISI data DARI NODE TERSEBUT KE LAYAR TERMINAL
 
-        for bagian in self.cabang:
-            bagian.tampilkan(level + 1)
+        for bagian in self.cabang: # MELAKUKAN PERULANGAN UNTUK MEMERIKSA SETIAP NODE ANAK YANG ADA DI DALAM LIST cabang
+            bagian.tampilkan(level + 1) # MEMANGGIL KEMBALI FUNGSI SECARA BERULANG (REKURSIF) UNTUK NODE BAGIAN DENGAN MENAIKKAN LEVEL SEBESAR 1
+            
