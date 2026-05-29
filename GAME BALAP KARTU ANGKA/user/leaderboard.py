@@ -1,7 +1,7 @@
 from utils.file_handler import baca_file, tulis_file
 from user.hash_table import HashTable
 
-def tambah_skor(gmail_login):
+def tambah_skor(gmail_login): # Untuk menambahkan skor pemain
     data = baca_file("data/penyimpanan.txt")
     data_baru = []
     skor_baru = 1
@@ -35,7 +35,7 @@ def tambah_skor(gmail_login):
     return skor_baru
 
 
-def leaderboard():
+def leaderboard(): # Untuk menampilkan leaderboard
     data = baca_file("data/penyimpanan.txt")
     if len(data) == 0:
         print("\nBelum ada data!")
@@ -57,10 +57,12 @@ def leaderboard():
             hash_skor.tambah_data(nama, skor)
         i += 1
 
-    pemain.sort(
-        key=lambda item: item[1],
-        reverse=True
-    )
+    # Bubble Sort
+    n = len(pemain) 
+    for i in range(n): 
+        for j in range(0, n - i - 1): 
+            if pemain[j][1] < pemain[j + 1][1]: #Membandingkan skor pemain
+                pemain[j], pemain[j + 1] = pemain[j + 1], pemain[j] # Menukar posisi pemain
 
     print("\n===== LEADERBOARD =====")
     ranking = 1

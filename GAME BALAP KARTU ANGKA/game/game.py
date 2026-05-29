@@ -1,4 +1,4 @@
-import random
+import random # Untuk memilih angka komputer secara acak
 
 from game.kartu import Kartu
 from game.jalur import tampilkan_jalur, PANJANG_JALUR
