@@ -1,4 +1,4 @@
-from menuutama import menu_utama
+from menuutama import menu_utama # MENGAMBIL FUNGSI menu_utama DARI DALAM FILE menuutama.py
 
-if __name__ == "__main__":
-    menu_utama()
+if __name__ == "__main__": # MEMRIKSA APAKAH FILE INI DIJALANKAN SECARA LANGSUNG (SEBAGAI PROGRAM UTAMA), BUKAN KARENA DIIMPOR OLEH FILE LAIN
+    menu_utama() # MENJALANKAN FUNGSI menu_utama UNTUK MEMULAI TAMPILAN MENU GAME PERTAMA KALI
