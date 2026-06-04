@@ -1,9 +1,9 @@
 from user.akun import cek_login
 
 def login():
-    gmail = input("Masukkan Gmail : ")
-    password = input("Masukkan Password : ")
-    berhasil = cek_login(gmail, password)
+    gmail = input("Masukkan Gmail : ")  # input gmail
+    password = input("Masukkan Password : ")    #input pw
+    berhasil = cek_login(gmail, password)   #nge cek cocok ga email dgn pw nya
 
     if berhasil:
         nama = gmail.split("@")[0]
