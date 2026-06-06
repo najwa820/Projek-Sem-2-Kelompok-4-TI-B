@@ -7,7 +7,7 @@ def register():
         print("\nGmail sudah terdaftar!")
         return  # kalau udh langsung return / bergenti prodes registrasinya
 
-    password = input("Masukkan Password : ")    # masukkan pw
+    password = input("Masukkan Password : ")    # buat pw
 
     if len(password) < 6:
         print("Password minimal 6 karakter!")

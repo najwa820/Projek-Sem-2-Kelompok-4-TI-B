@@ -16,3 +16,5 @@ Skor : 12
 Gmail : jejes@gmail.com
 Password : 123456
 Skor : 2
+Gmail : najwakhairunnisa@gmail.com
+Password : 123456
