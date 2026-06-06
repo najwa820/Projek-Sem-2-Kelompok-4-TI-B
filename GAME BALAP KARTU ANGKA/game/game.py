@@ -3,8 +3,8 @@ import random # Mengambil pustaka bawaan Python untuk mengacak nilai (misal: pil
 from game.kartu import Kartu # MENGAMBIL CETAKAN class Kartu DARI FOLDER game
 from game.jalur import tampilkan_jalur, PANJANG_JALUR # MENGAMBIL FUNGSI tampilkan_jalur DAN BATAS PANJANG LINTASAN DARI FILE jalur.py
 from game.ronde import mainkan_ronde # MENGAMBIL FUNGSI mainkan_ronde DARI DALAM FOLDER game DI FILE ronde.py
-from game.tree import TreeNode # MENGAMBIL CETAKAN class TreeNode DARI FOLDER game
-from game.graph import Graph # MENGAMBIL CETAKAN class Graph DARI FOLDER game
+from tree import TreeNode # MENGAMBIL CETAKAN class TreeNode DARI FOLDER game
+from graph import Graph # MENGAMBIL CETAKAN class Graph DARI FOLDER game
 
 from user.leaderboard import leaderboard, tambah_skor # MENGAMBIL FUNGSI PENAMPILAN DAN PENAMBAHAN SKOR PLAYER DARI FILE leaderboard.py
 
