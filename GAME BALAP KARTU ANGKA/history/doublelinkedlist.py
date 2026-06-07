@@ -2,7 +2,6 @@ class Node:
     def __init__(self, history):     #untuk membuat node baru
         self.history = history        # Menyimpan isi history
         self.next = None               # Menyimpan alamat node berikutnya
-
         self.prev = None                # Menyimpan alamat node sebelumnya
 
 class DoubleLinkedList:               # Class Double Linked List untuk mengelola data history
