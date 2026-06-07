@@ -3,20 +3,20 @@ from user.akun import gmail_sudah_ada
 
 def register():
     gmail = input("Masukkan Gmail : ") #Input gmail
-    if gmail_sudah_ada(gmail):  # Cek udh terdaftar atau blm
+    if gmail_sudah_ada(gmail):  #Mengecek apakah sudah terdaftar atau belum
         print("\nGmail sudah terdaftar!")
-        return  # kalau udh langsung return / bergenti prodes registrasinya
+        return  #Jika sudah langsung return / berhenti proses registrasinya
 
-    password = input("Masukkan Password : ")    # buat pw
+    password = input("Masukkan Password : ")    #Membuat pw
 
     if len(password) < 6:
         print("Password minimal 6 karakter!")
         return
 
-    data = (    #susunn data pengguna sperti di bawah
+    data = (    #susun data pengguna sperti di bawah
         f"Gmail : {gmail}\n"
         f"Password : {password}\n"
     )
 
-    tambah_file("data/penyimpanan.txt", data)   # simpan data ke file
+    tambah_file("data/penyimpanan.txt", data)   #Simpan data ke file penyimpanan
     print("\nREGISTER berhasil!")

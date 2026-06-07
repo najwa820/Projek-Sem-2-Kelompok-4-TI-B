@@ -1,12 +1,12 @@
 from user.akun import cek_login
 
-def login():
-    gmail = input("Masukkan Gmail : ")  # input gmail
-    password = input("Masukkan Password : ")    #input pw
-    berhasil = cek_login(gmail, password)   #nge cek cocok ga email dgn pw nya
+def login():    #Fungsi untuk proses login player
+    gmail = input("Masukkan Gmail : ")  #Input gmail
+    password = input("Masukkan Password : ")    #Input pw
+    berhasil = cek_login(gmail, password)   #nMengecek cocok atau tidak email dgn pw nya
 
-    if berhasil:
-        nama = gmail.split("@")[0]
+    if berhasil:    #Jika berhasil
+        nama = gmail.split("@")[0]  #Mengambil nama sebelum tanda @
         print(f"\nSelamat Datang {nama}!")
         return gmail
     print("\nGmail atau Password salah!")

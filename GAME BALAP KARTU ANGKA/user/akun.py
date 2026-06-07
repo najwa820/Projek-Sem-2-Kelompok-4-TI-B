@@ -1,13 +1,13 @@
 from utils.file_handler import baca_file
 
-def gmail_sudah_ada(gmail): # nge cek email sudah ada
-    data = baca_file("data/penyimpanan.txt")
+def gmail_sudah_ada(gmail): #Mengecek apakah email sudah ada di file penyimpanan
+    data = baca_file("data/penyimpanan.txt")    #Membaca data dari file penyimpanan
     for line in data:
         if gmail in line:
             return True
     return False
 
-def cek_login(gmail, password):     # verifikasi gmail dan pw saat login
+def cek_login(gmail, password):     #Verifikasi gmail dan pw saat login
     data = baca_file("data/penyimpanan.txt")
     i = 0
 
