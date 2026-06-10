@@ -57,7 +57,9 @@ def leaderboard(): # Untuk menampilkan leaderboard
             hash_skor.tambah_data(nama, skor)   #Menyimpan data ke hash table untuk pencarian
         i += 1
 
-    # Bubble Sort dari terbesar ke terkecil
+#=======================================================
+#Penerapan materi Bubble Sort (alpro)
+#=======================================================
     n = len(pemain) 
     for i in range(n): 
         for j in range(0, n - i - 1): 

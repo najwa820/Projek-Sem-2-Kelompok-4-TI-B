@@ -1,3 +1,7 @@
+#=====================================
+#Penerapan materi File Handler (alpro)
+#=====================================
+
 def baca_file(nama_file): # Untuk membaca isi file
     try:
         with open(nama_file, "r") as file: # r = read = baca

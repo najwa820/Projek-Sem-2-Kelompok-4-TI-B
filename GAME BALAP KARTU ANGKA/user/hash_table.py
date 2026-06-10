@@ -1,3 +1,7 @@
+#======================================
+#Penerapan materi Hash Table (strukdat)
+#======================================
+
 class HashTable:    #Untuk menyimpan dan mengelola data skor pemain
     def __init__(self):
         self.data = {}

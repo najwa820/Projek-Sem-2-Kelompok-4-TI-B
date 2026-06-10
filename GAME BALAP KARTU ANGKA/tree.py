@@ -1,3 +1,7 @@
+#====================================
+#Penerapan materi Tree (matkul alpro)
+#====================================
+
 class TreeNode: # MEMBUAT TEMPAT class BERNAMA TreeNode UNTUK MEMBAGUN STRUKTUR POHON DATA
     def __init__(self, data): # FUNGSI KHUSUS YANG OTOMATIS BERJALAN MEMBUAT OBJEK BARU DENGAN MEMBAWA PARAMETER data
         self.data = data # MENYIMPAN NILAI PARAMETER data KE DALAM VARIABEL INTERNAL OBJEK

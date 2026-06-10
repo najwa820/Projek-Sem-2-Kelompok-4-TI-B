@@ -1,3 +1,7 @@
+#========================================
+#Penerapan materi Stack (matkul strukdat)
+#========================================
+
 class Stack:             #class stack untuk menyimpan history permainan
     def __init__(self):   #inisialisasi stack kosong
         self.data = []    #list untuk menampung data stack

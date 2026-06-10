@@ -1,3 +1,7 @@
+#=======================================================
+#Penerapan materi Double Linked List (matkul strukdat)
+#=======================================================
+
 class Node:
     def __init__(self, history):     #untuk membuat node baru
         self.history = history        # Menyimpan isi history

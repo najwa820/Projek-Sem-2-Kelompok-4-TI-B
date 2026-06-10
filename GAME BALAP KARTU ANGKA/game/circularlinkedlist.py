@@ -1,3 +1,7 @@
+#=======================================================
+#Penerapan materi Circular Linked List (strukdat)
+#=======================================================
+
 import random
 
 class Node:

@@ -1,3 +1,7 @@
+#=======================================================
+#Penerapan materi Single Linked List (matkul strukdat)
+#=======================================================
+
 class Node:                   #class node untuk menyimpan satu data history 
     def __init__(self, isiHistory):     #inisialisasi node baru
         self.isiHistory = isiHistory     #menyimpan isi histroy permainan
